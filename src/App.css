@@ -60,15 +60,18 @@ table {
   text-overflow: ellipsis;
 }
 
-/* Column Size for thead */
-thead th:nth-child(-n+3), thead th:nth-child(6) {width: 10%;} 
+td input {
+  width: 100%;
+}
 
-thead th:nth-child(4), thead th:nth-child(5) {width: 30%;} 
+/* Column Size for thead */
+th:nth-child(-n+3), thead th:nth-child(6) {width: 10%} 
+th:nth-child(4), thead th:nth-child(5) {width: 30%} 
 
 /* Column size for tbody */
-tbody td:nth-child(-n+3), tbody td:nth-child(4) {width:10%;} 
+td:nth-child(-n+3), tbody td:nth-child(4) {width:10%;} 
+td:nth-child(4), tbody td:nth-child(5) {width: 30%} 
 
-tbody td:nth-child(4), tbody td:nth-child(5) {width: 30%} 
 
 /* zebra striping for table */
 tbody tr:nth-child(odd) {background-color:#fff0c7}

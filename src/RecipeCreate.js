@@ -29,12 +29,12 @@ function RecipeCreate( {addRecipe}) {
       <table>
       <thead>
           <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -46,6 +46,7 @@ function RecipeCreate( {addRecipe}) {
             onChange={handleChange}
             value={formData.name}
             placeholder="Name"
+            required={true}
           />
         </td>
         <td> 
@@ -55,6 +56,7 @@ function RecipeCreate( {addRecipe}) {
             onChange={handleChange}
             value={formData.cuisine}
             placeholder="Cuisine"
+            required={true}
           />
         </td>
         <td> 
@@ -64,6 +66,7 @@ function RecipeCreate( {addRecipe}) {
             onChange={handleChange}
             value={formData.photo}
             placeholder="Photo"
+            required={true}
           />
         </td>
         <td> 
@@ -73,6 +76,7 @@ function RecipeCreate( {addRecipe}) {
             onChange={handleChange}
             value={formData.ingredients}
             placeholder="Ingredients"
+            required={true}
           />
         </td>
         <td> 
@@ -82,6 +86,7 @@ function RecipeCreate( {addRecipe}) {
             onChange={handleChange}
             value={formData.preparation}
             placeholder="Preparation"
+            required={true}
           />
         </td>
             <td>

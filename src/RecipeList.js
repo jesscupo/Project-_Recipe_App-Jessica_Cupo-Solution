@@ -10,7 +10,7 @@ function Recipe({ name, cuisine, photo, ingredients, preparation }) {
     return ( <>
         <td>{name}</td>
          <td>{cuisine}</td>
-         <td> <img class="scale-down" src={photo}></img></td>
+         <td> <img className="scale-down" src={photo} alt=""></img></td>
          <td className="content_td"><p>{ingredients}</p></td>
          <td className="content_td"><p>{preparation}</p></td>
         <td><button type="submit" name="delete" onClick={handleDelete}>
